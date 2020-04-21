@@ -117,7 +117,7 @@ public class WeaponShot : MonoBehaviour
         var offset = new Vector2(moues.x - screenPoint.x, moues.y - screenPoint.y);
         var angel = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
 
-        var myszx = Input.mousePosition.x;
+        var myszx = Input.mousePosition.x+1;
         var myszy = Input.mousePosition.y;
         var kamerax = Camera.main.WorldToScreenPoint(transform.position).x;
         var kameray = Camera.main.WorldToScreenPoint(transform.position).y;
