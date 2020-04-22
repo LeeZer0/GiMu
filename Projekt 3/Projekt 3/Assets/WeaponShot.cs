@@ -128,7 +128,7 @@ public class WeaponShot : MonoBehaviour
            
 
            g = (GameObject)Instantiate(prefab, offset, Quaternion.Euler(0, 0, 0));
-           g.GetComponent<Rigidbody>().AddForce(a, -cam.transform.rotation.x * 180, b, ForceMode.Impulse);
+           g.GetComponent<Rigidbody>().AddForce(a * fast_bulest, -cam.transform.rotation.x * 180 * fast_bulest, b * fast_bulest, ForceMode.Impulse);
 
 
         }
@@ -139,7 +139,7 @@ public class WeaponShot : MonoBehaviour
 
 
             g = (GameObject)Instantiate(prefab, offset, Quaternion.Euler(0, 0, 0));
-            g.GetComponent<Rigidbody>().AddForce(a, -cam.transform.rotation.x * 180, -b, ForceMode.Impulse);
+            g.GetComponent<Rigidbody>().AddForce(a * fast_bulest, -cam.transform.rotation.x * 180 * fast_bulest, -b * fast_bulest, ForceMode.Impulse);
 
 
         }
@@ -150,7 +150,7 @@ public class WeaponShot : MonoBehaviour
 
 
             g = (GameObject)Instantiate(prefab, offset, Quaternion.Euler(0, 0, 0));
-            g.GetComponent<Rigidbody>().AddForce(a, -cam.transform.rotation.x * 180, -b, ForceMode.Impulse);
+            g.GetComponent<Rigidbody>().AddForce(a* fast_bulest, -cam.transform.rotation.x * 180 * fast_bulest, -b * fast_bulest, ForceMode.Impulse);
         }
         if (270f <= bodyy && bodyy < 360f)
         {
@@ -159,7 +159,7 @@ public class WeaponShot : MonoBehaviour
 
 
             g = (GameObject)Instantiate(prefab, offset, Quaternion.Euler(0, 0, 0));
-            g.GetComponent<Rigidbody>().AddForce(a, -cam.transform.rotation.x * 180, b, ForceMode.Impulse);
+            g.GetComponent<Rigidbody>().AddForce(a * fast_bulest, -cam.transform.rotation.x * 180 * fast_bulest, b * fast_bulest, ForceMode.Impulse);
         }
         //var dir = (body.transform.rotation.y, cam.transform.rotation.x) ;
         //GameObject g = (GameObject)Instantiate(prefab, offset, Quaternion.Euler(0, 0, 0));
