@@ -323,8 +323,8 @@ GameObject:
   - component: {fileID: 422898821}
   - component: {fileID: 422898820}
   - component: {fileID: 422898819}
-  - component: {fileID: 422898818}
   - component: {fileID: 422898817}
+  - component: {fileID: 422898818}
   m_Layer: 0
   m_Name: Capsule (2)
   m_TagString: Untagged
@@ -344,8 +344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecede050b8b509c48b9491fb277e709d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!136 &422898818
-CapsuleCollider:
+--- !u!64 &422898818
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -354,10 +354,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &422898819
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -692,8 +692,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d363d08b59d3c498460feba1a2ff62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!136 &1613719411
-CapsuleCollider:
+--- !u!64 &1613719411
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -702,10 +702,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1613719412
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -867,8 +867,8 @@ GameObject:
   - component: {fileID: 1812085915}
   - component: {fileID: 1812085914}
   - component: {fileID: 1812085913}
-  - component: {fileID: 1812085912}
   - component: {fileID: 1812085916}
+  - component: {fileID: 1812085912}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -876,8 +876,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &1812085912
-CapsuleCollider:
+--- !u!64 &1812085912
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -886,10 +886,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1812085913
 MeshRenderer:
   m_ObjectHideFlags: 0

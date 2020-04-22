@@ -7,10 +7,11 @@ public class Platform : MonoBehaviour
     public float canSpa = 3f;
     private int dol = 0;
     Rigidbody Rig;
+    Renderer rend;
     // Start is called before the first frame update
     void Start()
     {
-
+        rend = GetComponent<Renderer>();
     }
 
     // Update is called once per frame
@@ -18,7 +19,10 @@ public class Platform : MonoBehaviour
     {
         if (dol==1)
         {
+            
+
             Spada();
+            
         }
 
     }
@@ -38,8 +42,10 @@ public class Platform : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+
         if (col.gameObject.name == "Player")
         {  //check name
+            rend.material.SetColor("_Color", Color.red);
             dol = 1;
            
         }
@@ -56,6 +62,7 @@ public class Platform : MonoBehaviour
         if (canSpa < 0)
         { 
         gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            rend.material.SetColor("_Color", Color.black);
         }
         if (canSpa < -2)
         {

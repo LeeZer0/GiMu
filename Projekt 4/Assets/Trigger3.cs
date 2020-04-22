@@ -23,7 +23,7 @@ public class Trigger3 : MonoBehaviour
 
         if (col.gameObject.name == "Pocisk(Clone)")
         {
-            Debug.Log("kolor");
+            
             rend.material.SetColor("_Color", Random.ColorHSV());
 
         }
