@@ -125,30 +125,20 @@ public class WeaponShot : MonoBehaviour
         {
            float a= bodyy ;
            float b= 90f-Mathf.Abs(a);
-           
-
            g = (GameObject)Instantiate(prefab, offset, Quaternion.Euler(0, 0, 0));
            g.GetComponent<Rigidbody>().AddForce(a * fast_bulest, -cam.transform.rotation.x * 180 * fast_bulest, b * fast_bulest, ForceMode.Impulse);
-
-
         }
         if (90f <= bodyy && bodyy < 180f)
         {
             float a = 180f-bodyy ;
             float b = 90f-Mathf.Abs(a) ;
-
-
             g = (GameObject)Instantiate(prefab, offset, Quaternion.Euler(0, 0, 0));
             g.GetComponent<Rigidbody>().AddForce(a * fast_bulest, -cam.transform.rotation.x * 180 * fast_bulest, -b * fast_bulest, ForceMode.Impulse);
-
-
         }
         if (180f <= bodyy && bodyy < 270f)
         {
             float a = 180f - bodyy;
             float b = 90f - Mathf.Abs(a);
-
-
             g = (GameObject)Instantiate(prefab, offset, Quaternion.Euler(0, 0, 0));
             g.GetComponent<Rigidbody>().AddForce(a* fast_bulest, -cam.transform.rotation.x * 180 * fast_bulest, -b * fast_bulest, ForceMode.Impulse);
         }
@@ -156,8 +146,6 @@ public class WeaponShot : MonoBehaviour
         {
             float a = bodyy-360f;
             float b = 90f - Mathf.Abs(a);
-
-
             g = (GameObject)Instantiate(prefab, offset, Quaternion.Euler(0, 0, 0));
             g.GetComponent<Rigidbody>().AddForce(a * fast_bulest, -cam.transform.rotation.x * 180 * fast_bulest, b * fast_bulest, ForceMode.Impulse);
         }
