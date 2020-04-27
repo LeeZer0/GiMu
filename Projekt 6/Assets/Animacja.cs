@@ -7,8 +7,8 @@ public class Animacja : MonoBehaviour
 {
     GameObject player;
     public Animator anim;
-    private bool klik;
-
+    public bool klik;
+    public float rel_time;
 
 
     void Start()
@@ -20,33 +20,30 @@ public class Animacja : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+        rel_time += Time.deltaTime;
+
+
         if (Input.GetKeyUp(KeyCode.T) && klik==false)
         {
-            anim.SetBool("machaj", true);
             klik = true;
             Debug.Log("cos");
+            rel_time = 0f;
+
         }
-        if (Input.GetKeyUp(KeyCode.Y) && klik == true)
+        if (klik && rel_time>7.0f)
         {
-            anim.SetBool("machaj", false);
             klik = false;
-            Debug.Log("cdsaos");
         }
-
+        anim.SetBool("machaj", klik);
     }
 
 
 
 
 
-    void Open_Dor()
-    {
-        
-    }
-    void Close_Dor()
-    {
-       
-    }
+
 
 
 }

@@ -25,6 +25,7 @@ public class Trigger : MonoBehaviour
         {
             Debug.Log("kolor");
             rend.material.SetColor("_Color", Random.ColorHSV());
+            LightG.GetComponent<Light>().color = Color.red;
 
         }
     }
